@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="This page is a copy of the MDN references"
+		/>
+		<title>Landing Page</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+		<label class="close-menu-label" for="close-menu" title="close menu"></label>
+		<aside class="menu white-bg">
+			<div class="main-content flex-row">
+				<h1>
+					<a href="#home">LOGO</a>
+				</h1>
+
+				<nav>
+					<ul onclick="getElementById('close-menu').checked = false;" class="flex-row">
+						<li><a href="#intro">intro</a></li>
+						<li><a href="#top3">top 3</a></li>
+						<li><a href="#gallery">gallery</a></li>
+						<li><a href="#work">work</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+
+		<main class="main-bg section" id="home">
+			<div class="gap-down-menu"></div>
+			<div class="main-content grid-row">
+				<article class="flex-column main-text">
+					<h2>Getting started with the Web</h2>
+					<p>
+						Getting started with the Web is a concise series introducing you to
+						the practicalities of web development. You'll set up the tools you
+						need to construct a simple webpage and publish your own simple code.
+					</p>
+				</article>
+				<div class="main-img">
+					<img
+						src="assets/img/jshtmlcss.svg"
+						alt="Na imagem há três pessoas, cada uma apoiando a logo das respectivas tecnologias, CSS, javaScrip e HTML"
+					/>
+				</div>
+			</div>
+		</main>
+
+		<section class="section white-br" id="intro">
+			<div class="gap-down-menu"></div>
+			<div class="main-content intro-content">
+				<h2>Where to start</h2>
+				<p>
+					If you are a complete beginner to web development, we'd recommend that
+					you start by working through our
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Getting started with the web</a
+					>
+					module, which provides a practical introduction to web development.
+				</p>
+				<p>
+					If you have a bit of knowledge already, the next step is to learn
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Glossary/HTML"
+						target="_blank"
+						rel="noopener noreferrer"
+						>HTML</a
+					>
+					and
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Glossary/CSS"
+						target="_blank"
+						rel="noopener noreferrer"
+						>CSS</a
+					>
+					in detail: start with our
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Introduction to HTML</a
+					>
+					module and move on to our
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps"
+						target="_blank"
+						rel="noopener noreferrer"
+						>CSS first steps</a
+					>
+					module.
+				</p>
+				<p>
+					If you are comfortable with HTML and CSS already, or you are mainly
+					interested in coding, you'll want to move on to
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript"
+						target="_blank"
+						rel="noopener noreferrer"
+						>JavaScript</a
+					>
+					or server-side development. Begin with our
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps"
+						target="_blank"
+						rel="noopener noreferrer"
+						>JavaScript first steps</a
+					>
+					and
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Server-side first steps</a
+					>
+					modules.
+				</p>
+			</div>
+		</section>
+
+		<section class="main-bg section flex-column" id="top3">
+			<div class="gap-down-menu"></div>
+			<div class="main-content">
+				<h2>Top 3 Technology</h2>
+				<p>A brief description</p>
+
+				<div class="grid-one-row-three-columns">
+					<article>
+						<h3>HTML</h3>
+						<p>
+							HTML (HyperText Markup Language) is the most basic building block
+							of the Web. It defines the meaning and structure of web content.
+						</p>
+					</article>
+					<article>
+						<h3>CSS</h3>
+						<p>
+							Cascading Style Sheets (CSS) is a stylesheet language used to
+							describe the presentation of a document written in HTML or XML.
+							CSS describes how elements should be rendered on screen, on paper,
+							in speech, or on other media.
+						</p>
+					</article>
+					<article>
+						<h3>JavaScript</h3>
+						<p>
+							JavaScript (JS) is a lightweight, interpreted, or just-in-time
+							compiled programming language with first-class functions.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!--http://source.unsplash.com/random/360x360?r=1-->
+
+		<section id="gallery" class="section white-bg gallery">
+			<div class="gap-down-menu"></div>
+			<div class="main-content">
+				<h2>My Grid</h2>
+				<p>A brief description</p>
+
+				<div class="grid-two-row-three-columns">
+					<div class="gallery-img">
+						<img src="http://source.unsplash.com/random/720x720?a=1" alt="ramdom image" >
+					</div><!--Grid Item-->
+					<div class="gallery-img">
+						<img src="http://source.unsplash.com/random/720x720?b=1" alt="ramdom image" >
+					</div><!--Grid Item-->
+					<div class="gallery-img">
+						<img src="http://source.unsplash.com/random/720x720?c=1" alt="ramdom image" >
+					</div><!--Grid Item-->
+					<div class="gallery-img">
+						<img src="http://source.unsplash.com/random/720x720?d=1" alt="ramdom image" >
+					</div><!--Grid Item-->
+					<div class="gallery-img">
+						<img src="http://source.unsplash.com/random/720x720?e=1" alt="ramdom image" >
+					</div><!--Grid Item-->
+					<div class="gallery-img">
+						<img src="http://source.unsplash.com/random/720x720?f=1" alt="ramdom image" >
+					</div><!--Grid Item-->
+				</div>
+			</div>
+		</section><!--Gallery-->
+		
+		<section class="section white-br work" id="work">
+			<div class="gap-down-menu"></div>
+			<div class="main-content intro-content">
+				<h2>Pricing</h2>
+				<p>
+					If you are a complete beginner to web development, we'd recommend that
+					you start by working through our
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Getting started with the web</a
+					>
+					module, which provides a practical introduction to web development.
+				</p>
+
+				<div class="table-wraper">
+					<table>
+						<caption>
+							Média salarial
+						</caption>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Brazil</th>
+								<th>EUA</th>
+								<th>Japan</th>
+								<th>Europe</th>
+								<th>China</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Junior</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>Pleno</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>Senior</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="6">Fuleiro</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<div class="main-bg section contact" id="contact">
+			<div class="gap-down-menu"></div>
+			<div class="main-content grid-row">
+				<article class="flex-column main-text">
+					<h2>Getting started with the Web</h2>
+					<p>
+						Getting started with the Web is a concise series introducing you to
+						the practicalities of web development. You'll set up the tools you
+						need to construct a simple webpage and publish your own simple code.
+					</p>
+				</article>
+				<div class="main-img">
+					<img
+						src="assets/img/contact_us.svg"
+						alt="Na imagem há três pessoas, cada uma apoiando a logo das respectivas tecnologias, CSS, javaScrip e HTML"
+					/>
+				</div>
+
+				<div class="contact-form">
+					<fieldset class="form-grid">
+						<legend>Contact_Us</legend>
+						<div class="wrap-form">
+							<label for="first-name">First Name</label
+							><input
+								type="text"
+								name="first-name"
+								id="first-name"
+								placeholder="Your name"
+							/>
+						</div>
+						<div class="wrap-form">
+							<label for="last-name">Last Name</label
+							><input
+								type="text"
+								name="last-name"
+								id="last-name"
+								placeholder="Your last name"
+							/>
+						</div>
+						<div class="wrap-form">
+							<label for="email">E-mail</label
+							><input
+								type="text"
+								name="email"
+								id="email"
+								placeholder="Your e-mail"
+							/>
+						</div>
+						<div class="wrap-form full-width">
+							<label for="message">Mensage</label
+							><textarea
+								name="message"
+								id="message"
+								cols="30"
+								rows="10"
+								placeholder="Your message"
+							></textarea>
+						</div>
+						<div class="wrap-form full-width">
+							<button type="submit">Send message</button>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+
+		<footer class="white-bg main-content">
+			<p>Feito com <span>❤</span> por Evilis Glenio</p>
+		</footer>
+	</body>
+</html>
